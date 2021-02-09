@@ -1,0 +1,58 @@
+> Introductions
+		contact me at: coder@nhfpl.org
+		sign up for my office hours: https://nativescript-vue.org/
+
+> Entrepreneur in-residence
+	Marina will speak about non-technical application building
+
+> Native applications
+		these apps run with code that is 'native' to the operating environment
+		swift or objective c, kotlin on android (java), the .net framework
+
+		Microsoft's Xamarin (9 yr)
+			https://docs.microsoft.com/en-us/xamarin/get-started/
+
+			uses the .net framework ecosystem
+				producese a native app
+			XAML, creating simple applications from forms alone
+				markdown makes for approachable building
+			Good visual studio integration
+			Microsoft docs
+			provides example
+
+> Hybrid applications
+		will allow us to use some arbitrary tech framework, maybe more typically suited for ui web (frameworks)
+		https://ionicframework.com/resources/articles/what-is-hybrid-app-development
+			
+		Ionic (8 yr)
+			https://ionicframework.com/
+
+			accompanied by deployment / support
+				hosting, security, admin tools
+				good for scaling
+					this is high value for growing quickly
+			common web framework approaches
+				react, angular, vue js
+			popular, big community / documentation
+			provides example
+
+		others include Flutter via Google (uses the Dart lang), Cordova from Apache (html/js/css), and meteor (Mac bias)
+
+	all have verbose tutorials, documentation
+	and avenues for setting up a sample application quickly
+
+> NativeScript application framework
+	we're going to pick a native approach that allows us to use some common technologies 
+	as a compromise
+
+	Nativescript (6 yr)
+		https://nativescript-vue.org/
+		free and open-source
+		use popular frameworks for building your application
+		produces native apps
+		web based playground environment for creating apps
+			with designer
+			immediately usable in mobile!
+
+	- good docs
+  - core technologies will be used to make our app

@@ -1,0 +1,61 @@
+Session 2: TABLE OF CONTENTS
+
+> Introduction and Office Hours reminder
+	Every Monday, 6:30 to 8:30
+	https://calendly.com/coder-nhfpl
+
+> Start downloading the app!
+		On your mobile phone..
+		download the NativeScript Playground app
+		download the NativeScript Preview app
+
+> Survey responses
+
+> What is NativeScript?
+		we can use Javascript and CSS
+		free and open-source
+		use popular frameworks for building your application
+		produces native apps
+		web based playground environment for previewing applications
+
+> Why Vue?
+		JavaScript: the code.
+			JavaScript is a language used to write code.
+		Vue: the frontend helper (framework).
+			Adding features to our app is easier using Vue.
+		NativeScript: mobile helper.
+			A platform for getting the code to the phone
+
+> Getting Started with Nativescript (Requirements)
+		Visit https://nativescript.org/vue/ (bookmark me!)
+			It's the flavor of NativeScript we'll use to build our app
+		Documentation:
+			From the NativeScript-Vue page, scroll down to 
+			'Documentation'
+			and click the button (bookmark!)
+		Playground:
+			From the NativeScript-Vue page, scroll down to
+			'Getting Started'
+			and click 'NativeScript Playground'
+		The mobile app (mobile NativeScript Playground, NativeScript Preview)
+
+> Playing with NativeScript
+		Previewing the template on the phone
+		Touring the application code
+		Adding a small feature
+			adding a button
+			refreshing the preview
+	
+> Next session
+	Developing locally
+		From the Vue Documentation page
+		on the left-hand side, click 'Installation'
+
+	Using a code editor
+		https://atom.io/
+
+	Source Control for tracking our code
+		https://github.com/pageSwanson
+
+	Application Ideas
+		audio player? https://github.com/nstudio/nativescript-audio
