@@ -1,0 +1,95 @@
+> Helpful resources
+	javascript.info
+	nature of code
+
+> Using a code editor (IDE)
+	https://atom.io/
+		good option for a simple full featured editor, lightweight
+	https://code.visualstudio.com/Download
+		visual studio code is a lightweight free editor, offers a lot of features inspired by visual studio
+
+> Developing locally
+	Specifically, we'll need:
+		Node.js
+			this is an engine for JavaScript code - it lets us run JavaScript outside of the browser
+			Node.js ships with npm, a node package manager that will allow us to download additional development tools
+		nativescript-cli
+			this is a tool we'll use to setup our nativescript apps
+		vue-cli-template
+			this is a package that we can use to start Vue.js apps from scratch with different layout options
+
+	NOTE to Windows users: 
+		look into installing Windows terminal, a good alternative to the cmd prompt application
+		https://docs.microsoft.com/en-us/windows/terminal/get-started
+		you can use this to run commands as you see them in the instructions below by selecting the Ubuntu profile after you get started
+
+	go to the Docs page: https://nativescript-vue.org/en/docs/introduction/ (bookmark)
+
+	Node.js and the nativescript-cli:
+		visit the 'Installation' link in the left-hand sidebar
+		follow the instructions listed for your system / intended platform
+
+		NOTE on node.js / npm: if you're not using Windows
+			you might find that you get permissions errors when you run 'npm install -g <something>'
+			https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally#manually-change-npms-default-directory
+			
+			the above suggests editing a '.profile' file - this means that if you close your terminal and reopen
+			you'll need to run
+				source ~/.profile
+			again
+			
+			you can also get around this by instead editing a '.bash_profile' file, which will load each time you use your terminal
+	
+	vue-cli-template:
+		back to the Docs page, visit the 'Quick Start' link on the left 
+		follow the commands listed in the code section, below the list of Supported Features
+		starting with the install for the @vue/cli packages
+		
+		for the @vue/cli package, run
+			
+			npm install -g @vue/cli@latest @vue/cli-init@latest
+
+		instead of
+
+			npm install -g @vue/cli @vue/cli-init
+		
+		to ensure you get the latest versions of the required packages
+
+> Preview locally
+	Continuing from the 'Quick Start' instructions, run
+	
+		vue init nativescript-vue/vue-cli-template <project-name>
+
+	where <project-name> should be replaced with your name of choice
+	folder will be created, which you can now navigate to, by running..
+	
+		cd <project-name>
+
+	once you run that, you can then run
+	
+		npm install
+
+	in this folder. it will pull all the necessary packages together for the application
+
+	If you still have the NativeScript Playground and NativeScript Preview apps
+	you can generate a preview of our template application by running
+
+		ns preview
+
+	and snapping a picture of the QR code provided
+	this should generate a preview with all of the features provided in our template
+
+> Advanced setup
+	Once you've selected your platform (iOS or Android)
+	Follow the setup so you can build apps to target your device 
+	
+	Visit the 'Installation' link on the left side of the Vue Docs page
+	and scroll down to the Operating System you're using now
+	
+	you can follow instructions for the different types of mobile devices you want to target
+
+> Next steps
+	Go through the NativeScript Vue Playground tutorial
+	Follow the steps above on your own to setup a local workstation
+		try to target a platform that you can emulate or test before going to the phone
+	Create a Github to host your code
