@@ -1,6 +1,6 @@
 > Helpful resources
-	javascript.info
-	nature of code
+	https://javascript.info/
+	https://natureofcode.com/book/
 
 > Using a code editor (IDE)
 	https://atom.io/

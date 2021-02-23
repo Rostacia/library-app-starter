@@ -20,6 +20,10 @@
 			Microsoft docs
 			provides example
 
+		The Ionic platform also offers a technology called Capcitor for producing native apps
+			https://capacitorjs.com/
+			a recent project with very few setup requirements
+
 > Hybrid applications
 		will allow us to use some arbitrary tech framework, maybe more typically suited for ui web (frameworks)
 		https://ionicframework.com/resources/articles/what-is-hybrid-app-development
@@ -36,7 +40,14 @@
 			popular, big community / documentation
 			provides example
 
-		others include Flutter via Google (uses the Dart lang), Cordova from Apache (html/js/css), and meteor (Mac bias)
+		others include ..
+
+		Flutter by Google (uses the Dart lang)
+		Apache Cordova (html/js/css)
+		Meteor (bias towards working with OSX)
+		Monaca has a cloud development system
+			no local development setup, apps are deployed with their service
+			https://monaca.io/
 
 	all have verbose tutorials, documentation
 	and avenues for setting up a sample application quickly
@@ -55,4 +66,5 @@
 			immediately usable in mobile!
 
 	- good docs
+		EDIT : good implementation tutorials and component documentation, but poor documentation on developer setup
   - core technologies will be used to make our app
