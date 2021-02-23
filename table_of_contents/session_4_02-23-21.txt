@@ -1,0 +1,96 @@
+> Helpful resources
+	https://learnxinyminutes.com/
+
+> Source Control for tracking our code
+	https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+		instructions and survey of common tasks
+
+	source control tools like Git let us keep track of our changes
+	we can view our progress over time and find old changes quickly
+	
+	The Github platform lets us use Git to share our code with others
+	and helps us find code resources that we can collaborate on
+
+	https://github.com/pageSwanson
+
+> Notes on browsing Github
+	do they have a site for the project?
+	readme?
+	last commit?
+	open issues?
+	pull requests?
+
+> Vue for js, for NativeScript
+	using just JavaScript
+		fewer dependencies
+		distributed code structure
+		flexible organization
+
+	with Vue
+		gradual learning curve
+		single 'view' file
+		app contained as a component
+			new addition -> new component
+
+	compare templates for yourself
+
+> Investigate the project
+	App_Resources
+		platform specific configuration settings
+
+	node_modules, package-lock.json
+		the dependencies we need for our app
+		the versions and requirements list
+
+	src/app.scss
+		core styling, theme styling
+		what happens when removed?
+
+	src/main.js
+		starting point for our application
+		notice the 'import' at the top of the file
+	
+		follow this to..
+
+	src/components
+		App.vue
+			nice advantage of Vue - self-contained component
+		what happens if we remove the core styles?
+
+	src/assets
+		keep images and icons
+		
+> Simple frameworks for appearance
+	a basic css framework
+		(a collection of accessible references for bringing in meaning and for referencing complex code quickly / easily)
+	can quickly achieve something functional for our UI
+		lets us get a much stronger idea of the shape of an app
+		range from deep and configurable to simple and immediate
+
+	simple and immediate rec. for web:
+	https://yegor256.github.io/tacit/
+
+	for our app:
+	keep in mind, we rely on classes because NativeScript doesn't use html
+		https://docs.nativescript.org/ui/styling
+
+	options:
+		adapt an existing simple framework (tedious)
+
+		build our own simple css ruleset (exhaustive)
+
+		.. https://www.nativescriptthemebuilder.com/
+
+> Layout and spacing
+	from the Docs page, view layouts section
+	looking at the approaches, we can see some familiar looks
+		try to imagine how you see your information being displayed
+
+	tool from NativeScript: https://www.nslayouts.com/
+
+> App idea
+	personal reference
+		a wiki
+	business services app
+		appointment booking
+		service selection
