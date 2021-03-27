@@ -1,27 +1,11 @@
 <template>
-    <Page>
-        <ActionBar>
-            <Label text="Home"/>
+    <Page class="page">
+        <ActionBar class="action-bar">
+            <Label class="label" text="Home"/>
         </ActionBar>
 
-        <GridLayout columns="1*, 3*, 1*" rows="4*, 3*, 2*">
-            <Label class="info" row="0" col="1" text="Count goes here"></Label>
-            <Label row="=1" col="0">
-              <FormattedString>
-                <Span class="far" text="&plus;"></Span>
-              </FormattedString>
-            </Label>
-            <Label row="=1" col="2">
-              <FormattedString>
-                <Span class="far" text="&minus;"></Span>
-              </FormattedString>
-            </Label>
-            <Label row="2" col="1">
-              <FormattedString>
-                <Span class="far" text="&spin;"></Span>
-              </FormattedString>
-              <Button text="Reset"></Button>
-            </Label>
+        <GridLayout columns="*, *, *" rows="*, *, *">
+          <Label class="label" col="1" row="1" v-bind:text="message"/>
         </GridLayout>
     </Page>
 </template>
@@ -30,7 +14,7 @@
   export default {
     computed: {
       message() {
-        return "Blank {N}-Vue app";
+        return "Welcome!";
       }
     }
   };
@@ -42,11 +26,5 @@
     // Custom styles
     .fas {
         @include colorize($color: accent);
-    }
-
-    .info {
-        font-size: 20;
-        horizontal-align: center;
-        vertical-align: center;
     }
 </style>
