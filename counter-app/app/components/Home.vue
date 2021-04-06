@@ -4,7 +4,7 @@
             <Label class="label" text="Home"/>
         </ActionBar>
 
-        <GridLayout columns="*, *, *" rows="*, *, *">
+        <GridLayout columns="*" rows="*">
           <Label class="label" col="1" row="1" v-bind:text="message"/>
         </GridLayout>
     </Page>
