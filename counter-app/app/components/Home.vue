@@ -5,23 +5,37 @@
         </ActionBar>
 
         <GridLayout columns="*, 2*, *" rows="*, 2*, *">
-          <Button class="btn" col="0" row="0" text="Close"/>
-          <Button class="btn" col="2" row="0" text="Add Count"/>
+          <Button class="btn-primary btn-rounded-lg counter-adjust" col="0" row="1" @tap="decrement()" text.decode="&#x2193;"/>
+          <Label class="label counter-count" col="1" row="1" :text="viewCount"/>
+          <Button class="btn-primary btn-rounded-lg counter-adjust" col="2" row="1" @tap="increment()" text.decode="&#x2191;"/>
 
-          <Button class="btn-primary btn-rounded-lg counter-adjust" col="0" row="1" text="-"/>
-          <Label class="label counter-count" col="1" row="1" text="1000"/>
-          <Button class="btn-primary btn-rounded-lg counter-adjust" col="2" row="1" text="+"/>
-
-          <Button class="btn-primary btn-rounded-sm counter-reset" col="1" row="2" text="Reset"/>
+          <Button class="btn-primary btn-rounded-sm counter-reset" col="1" row="2" @tap="reset()" text="Reset"/>
         </GridLayout>
     </Page>
 </template>
 
 <script>
   export default {
+    data() {
+      return {
+        count: 0
+      }
+    },
     computed: {
-      message() {
-        return "Welcome!";
+      viewCount() {
+        return this.count.toString();
+      }
+    },
+    methods: {
+      increment: function() {
+        this.count = this.count + 1;
+        console.log(this.count);
+      },
+      decrement: function() {
+        this.count = this.count - 1;
+      },
+      reset: function() {
+        this.count = 0;
       }
     }
   };
