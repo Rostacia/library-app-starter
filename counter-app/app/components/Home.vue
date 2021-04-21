@@ -5,11 +5,15 @@
         </ActionBar>
 
         <GridLayout columns="*, 2*, *" rows="*, 2*, *">
-          <Button class="btn-primary btn-rounded-lg counter-adjust" col="0" row="1" @tap="decrement()" text.decode="&#x2193;"/>
-          <Label class="label counter-count" col="1" row="1" :text="viewCount"/>
-          <Button class="btn-primary btn-rounded-lg counter-adjust" col="2" row="1" @tap="increment()" text.decode="&#x2191;"/>
+          <!-- decrement -->
+          <Button class="btn-primary btn-rounded-lg counter-adjust" col="0" row="1" @tap="decrement" text.decode="&#x2193;"/>
+          <!-- the count -->
+          <Label class="label counter-count" col="1" row="1" :text="viewableCount"/>
+          <!-- increment -->
+          <Button class="btn-primary btn-rounded-lg counter-adjust" col="2" row="1" @tap="increment" text.decode="&#x2191;"/>
 
-          <Button class="btn-primary btn-rounded-sm counter-reset" col="1" row="2" @tap="reset()" text="Reset"/>
+          <!-- reset -->
+          <Button class="btn-primary btn-rounded-sm counter-reset" col="1" row="2" @tap="reset" text="Reset"/>
         </GridLayout>
     </Page>
 </template>
@@ -21,21 +25,25 @@
         count: 0
       }
     },
-    computed: {
-      viewCount() {
-        return this.count.toString();
-      }
-    },
     methods: {
-      increment: function() {
+      increment() {
         this.count = this.count + 1;
-        console.log(this.count);
       },
-      decrement: function() {
+      decrement() {
+        // constraint on going negative (don't do it)
+        if (this.count == 0) {
+          return;
+        }
+
         this.count = this.count - 1;
       },
-      reset: function() {
+      reset() {
         this.count = 0;
+      }
+    },
+    computed: {
+      viewableCount() {
+        return this.count.toString();
       }
     }
   };
